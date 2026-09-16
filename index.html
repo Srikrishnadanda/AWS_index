@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Krishna | Portfolio</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #232f3e, #37475a);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+  header p { font-size: 1.1rem; color: #d9d9d9; }
+
+  nav {
+    background: #232f3e;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav a:hover { color: #ff9900; }
+
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  section h2 {
+    color: #232f3e;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ff9900;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #ff9900;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #ff9900;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .btn:hover { background: #e68a00; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Hello, I'm Sri Krishna 👋</h1>
+  <p>Cloud Enthusiast | AWS Learner | Building my first static website</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I'm learning AWS and cloud computing, starting with hosting this static website on Amazon S3. This page is my first step into building and deploying real projects on the cloud.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="cards">
+    <div class="card"><strong>AWS S3</strong><p>Static website hosting, bucket policies</p></div>
+    <div class="card"><strong>HTML/CSS</strong><p>Building responsive web pages</p></div>
+    <div class="card"><strong>Cloud Basics</strong><p>IAM, EC2, and core AWS services</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card"><strong>Static Portfolio</strong><p>This website, hosted entirely on S3.</p></div>
+    <div class="card"><strong>Coming Soon</strong><p>More projects as I keep learning!</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Want to connect? Reach out below.</p>
+  <a href="mailto:your-email@example.com" class="btn">Say Hello</a>
+</section>
+
+<footer>
+  &copy; 2026 Sri Krishna. Hosted on Amazon S3.
+</footer>
+
+</body>
+</html>
